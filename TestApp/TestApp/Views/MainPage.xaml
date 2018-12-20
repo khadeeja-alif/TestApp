@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            x:Class="TestApp.Views.MainPage" Title="{Binding Title}"
+            xmlns:view="clr-namespace:TestApp.Views"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            android:TabbedPage.IsSwipePagingEnabled="False"
+            BarBackgroundColor="SteelBlue"
+            BarTextColor="White">
+    <TabbedPage.Children>
+        <view:CircularProgress Title="Circle" Icon="search.png"/>
+        <view:RedPage Title="Red" Icon="search.png"/>
+        <view:LinearProgress Title="Linear" Icon="search.png"/>
+        <view:YellowPage Title="Yellow" Icon="search.png"/>
+        <view:BluePage Title="Blue" Icon="search.png"/>
+    </TabbedPage.Children>
+</TabbedPage>
