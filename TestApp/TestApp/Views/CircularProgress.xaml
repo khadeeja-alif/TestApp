@@ -16,7 +16,7 @@
                                                IndicatorInnerRadius="0.65"
                                                TrackInnerRadius="0.65"
                                                ShowProgressValue="false">
-                            <progressBar:SfCircularProgressBar.Content>
+                          <!--  <progressBar:SfCircularProgressBar.Content>
                                         <Grid RowSpacing="0">
                                             <Grid.RowDefinitions>
                                                 <RowDefinition Height="Auto"/>
@@ -31,7 +31,7 @@
                                             <Label Grid.Row="2" Text="BOOKINGS" TextColor="Black"
                                FontSize="13" HorizontalTextAlignment="Center"/>
                                         </Grid>
-                                    </progressBar:SfCircularProgressBar.Content>
+                                    </progressBar:SfCircularProgressBar.Content>-->
                             </progressBar:SfCircularProgressBar>
                     </DataTemplate>
                     </ListView.HeaderTemplate>

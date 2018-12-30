@@ -6,9 +6,12 @@ namespace TestApp.ViewModels
 {
     public class CircularProgressViewModel : ViewModelBase
     {
+        readonly INavigationService _navigationService;
+
         public ObservableCollection<string> Blah { get; set; }
-        public CircularProgressViewModel(INavigationService navigationService) : base(navigationService)
+        public CircularProgressViewModel(INavigationService navigationService)
         {
+            _navigationService = navigationService;
             showList = true;
             Blah = new ObservableCollection<string>() { "Hello", "Hi", "Bye" };
             RaisePropertyChanged("Blah");

@@ -93,9 +93,6 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <ITunesArtwork Include="iTunesArtwork@1x.png" />
-    <ITunesArtwork Include="iTunesArtwork@2x.png" />
-    <ITunesArtwork Include="iTunesArtwork@3x.png" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\Contents.json">
@@ -175,13 +172,46 @@
     </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Default-568h@2x.png" />
-    <BundleResource Include="Resources\Default-Portrait.png" />
-    <BundleResource Include="Resources\Default-Portrait@2x.png" />
-    <BundleResource Include="Resources\Default.png" />
-    <BundleResource Include="Resources\Default@2x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\ground_report_selected.png" />
+    <BundleResource Include="Resources\ground_report_selected%402x.png" />
+    <BundleResource Include="Resources\ground_report_selected%403x.png" />
+    <BundleResource Include="Resources\ground_report.png" />
+    <BundleResource Include="Resources\ground_report%402x.png" />
+    <BundleResource Include="Resources\ground_report%403x.png" />
+    <BundleResource Include="Resources\ground_selected.png" />
+    <BundleResource Include="Resources\ground_selected%402x.png" />
+    <BundleResource Include="Resources\ground_selected%403x.png" />
+    <BundleResource Include="Resources\ground.png" />
+    <BundleResource Include="Resources\ground%402x.png" />
+    <BundleResource Include="Resources\ground%403x.png" />
+    <BundleResource Include="Resources\home_selected.png" />
+    <BundleResource Include="Resources\home_selected%402x.png" />
+    <BundleResource Include="Resources\home_selected%403x.png" />
+    <BundleResource Include="Resources\home.png" />
+    <BundleResource Include="Resources\home%402x.png" />
+    <BundleResource Include="Resources\home%403x.png" />
+    <BundleResource Include="Resources\search_selected.png" />
+    <BundleResource Include="Resources\search_selected%402x.png" />
+    <BundleResource Include="Resources\search_selected%403x.png" />
     <BundleResource Include="Resources\search.png" />
+    <BundleResource Include="Resources\search%402x.png" />
+    <BundleResource Include="Resources\search%403x.png" />
+    <BundleResource Include="Resources\settings_selected.png" />
+    <BundleResource Include="Resources\settings_selected%402x.png" />
+    <BundleResource Include="Resources\settings_selected%403x.png" />
+    <BundleResource Include="Resources\settings.png" />
+    <BundleResource Include="Resources\settings%402x.png" />
+    <BundleResource Include="Resources\settings%403x.png" />
+    <BundleResource Include="Resources\ticket_selected.png" />
+    <BundleResource Include="Resources\ticket_selected%402x.png" />
+    <BundleResource Include="Resources\ticket_selected%403x.png" />
+    <BundleResource Include="Resources\ticket.png" />
+    <BundleResource Include="Resources\ticket%402x.png" />
+    <BundleResource Include="Resources\ticket%403x.png" />
+    <BundleResource Include="Resources\quick_book.png" />
+    <BundleResource Include="Resources\quick_book%402x.png" />
+    <BundleResource Include="Resources\quick_book%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -192,7 +222,13 @@
   <ItemGroup>
     <PackageReference Include="Prism.DryIoc.Forms" Version="7.1.0.431" />
     <PackageReference Include="Syncfusion.Xamarin.SfProgressBar">
-      <Version>16.3.0.29</Version>
+      <Version>16.4.0.44</Version>
+    </PackageReference>
+    <PackageReference Include="ElegantTabs">
+      <Version>0.1.1-pre</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Essentials">
+      <Version>1.0.0</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

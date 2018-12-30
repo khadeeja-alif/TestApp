@@ -9,7 +9,7 @@ namespace TestApp.ViewModels
 {
     public class ViewModelBase : BindableBase, INavigationAware, IDestructible
     {
-        protected INavigationService NavigationService { get; private set; }
+        //protected INavigationService NavigationService { get; private set; }
 
         private string _title;
         public string Title
@@ -18,9 +18,9 @@ namespace TestApp.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
-        public ViewModelBase(INavigationService navigationService)
+        public ViewModelBase()
         {
-            NavigationService = navigationService;
+            //NavigationService = navigationService;
         }
 
         public virtual void OnNavigatedFrom(INavigationParameters parameters)

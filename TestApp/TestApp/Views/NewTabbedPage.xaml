@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="TestApp.Views.NewTabbedPage"
+            xmlns:view="clr-namespace:TestApp.Views"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            android:TabbedPage.IsSwipePagingEnabled="False"
+            xmlns:plugin="clr-namespace:ElegantTabs.Abstraction;assembly=ElegantTabs.Abstraction"
+            BarBackgroundColor="White"
+            BarTextColor="White"
+            Title="New Tabbed Page">
+    <TabbedPage.Children>
+        <view:NewTab1 Title="Tab1" Icon="home.png" plugin:Transforms.SelectedIcon="home_selected.png" plugin:Transforms.HideTitle="True"/>
+        <view:NewTab2 Title="Tab2" Icon="ground.png" plugin:Transforms.SelectedIcon="ground_selected.png" plugin:Transforms.HideTitle="True"/>
+        <view:NewTab3 Title="Tab3" Icon="quick_book.png"  plugin:Transforms.KeepIconColourIntact="True" plugin:Transforms.DisableLoad="True" plugin:Transforms.HideTitle="True"/>
+        <view:NewTab4 Title="Tab4" Icon="ground_report.png" plugin:Transforms.SelectedIcon="ground_report_selected.png" plugin:Transforms.HideTitle="True"/>
+        <view:BluePage Title="Blue" Icon="settings.png" plugin:Transforms.SelectedIcon="settings_selected.png" plugin:Transforms.HideTitle="True"/>
+    </TabbedPage.Children>
+</TabbedPage>

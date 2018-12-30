@@ -31,6 +31,8 @@ namespace TestApp
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<CircularProgress, CircularProgressViewModel>();
+            containerRegistry.RegisterForNavigation<BluePage, BluePageViewModel>();
+            containerRegistry.RegisterForNavigation<NewTabbedPage, NewTabbedPageViewModel>();
         }
     }
 }
