@@ -222,7 +222,7 @@
   <ItemGroup>
     <PackageReference Include="Prism.DryIoc.Forms" Version="7.1.0.431" />
     <PackageReference Include="Syncfusion.Xamarin.SfProgressBar">
-      <Version>16.4.0.44</Version>
+      <Version>16.4.0.47</Version>
     </PackageReference>
     <PackageReference Include="ElegantTabs">
       <Version>0.1.1-pre</Version>
