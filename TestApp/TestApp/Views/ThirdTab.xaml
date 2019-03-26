@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="TestApp.Views.ThirdTab"
+             xmlns:progressBar="clr-namespace:Syncfusion.XForms.ProgressBar;assembly=Syncfusion.SfProgressBar.XForms"
+             x:Name="Root">
+    <ContentPage.Content>
+         <ListView x:Name="list" Margin="15" ItemsSource="{Binding Blah}" SelectionMode="None" Header="{Binding}"
+                      SeparatorColor="#E1E1E1">
+                <ListView.Header>
+        <StackLayout Margin="10,0" VerticalOptions="CenterAndExpand">
+              <progressBar:SfLinearProgressBar x:Name="linearProgress" Progress="100">
+                            <progressBar:SfLinearProgressBar.RangeColors>
+                                <progressBar:RangeColorCollection>
+                                    <progressBar:RangeColor Color="#F0916E" Start="0" End="{Binding Source={x:Reference Root},Path=BindingContext.LocalProgress}" />
+                                    <progressBar:RangeColor Color="#704191" Start="{Binding Source={x:Reference Root},Path=BindingContext.LocalProgress}" End="{Binding Source={x:Reference Root},Path=BindingContext.SmcProgress}" />
+                                </progressBar:RangeColorCollection>
+                            </progressBar:SfLinearProgressBar.RangeColors>
+                        </progressBar:SfLinearProgressBar>
+        </StackLayout>
+                </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding .}"/>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

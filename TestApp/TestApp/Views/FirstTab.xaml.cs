@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace TestApp.Views
 {
-    public partial class YellowPage : ContentPage
+    public partial class FirstTab : ContentPage
     {
-        public YellowPage()
+        public FirstTab()
         {
             InitializeComponent();
         }

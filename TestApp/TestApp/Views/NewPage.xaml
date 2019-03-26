@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="TestApp.Views.NewPage"
+             xmlns:view="clr-namespace:TestApp.Views">
+    <ContentPage.Content>
+         <Grid>
+            <Button Text="SHOW POP UP" Command="{Binding ShowPopUp}" VerticalOptions="Center"/>
+            <view:WeekListView IsVisible="{Binding ShowWeekView}"
+                                ClearAllCommand="{Binding ClearWeek}"
+                                CloseCommand="{Binding HideWeekView}"
+                                WeekDay="{Binding CopyWeekDay}"
+                                WeekList="{Binding WeekList}"
+                                SelectedWeekItems="{Binding SelectedWeekItems}"
+                                PasteCommand="{Binding PasteCommand}"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

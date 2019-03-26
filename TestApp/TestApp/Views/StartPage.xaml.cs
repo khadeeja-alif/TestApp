@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace TestApp.Views
 {
-    public partial class NewTab3 : ContentPage
+    public partial class StartPage : TabbedPage
     {
-        public NewTab3()
+        public StartPage()
         {
             InitializeComponent();
         }

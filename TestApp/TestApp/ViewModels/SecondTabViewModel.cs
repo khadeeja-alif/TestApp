@@ -4,7 +4,7 @@ using Prism.Navigation;
 
 namespace TestApp.ViewModels
 {
-    public class CircularProgressViewModel : ViewModelBase
+    public class SecondTabViewModel : ViewModelBase
     {
         readonly INavigationService _navigationService;
 
@@ -12,7 +12,7 @@ namespace TestApp.ViewModels
         public int Label1 { get; set; }
         public int Label2 { get; set; }
         public int Label3 { get; set; }
-        public CircularProgressViewModel(INavigationService navigationService)
+        public SecondTabViewModel(INavigationService navigationService)
         {
             _navigationService = navigationService;
             showList = true;

@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace TestApp.Views
 {
-    public partial class BluePage : ContentPage
+    public partial class ThirdTab : ContentPage
     {
-        public BluePage()
+        public ThirdTab()
         {
             InitializeComponent();
         }

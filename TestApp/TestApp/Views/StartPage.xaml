@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="TestApp.Views.StartPage"
+             xmlns:view="clr-namespace:TestApp.Views"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            android:TabbedPage.IsSwipePagingEnabled="False"
+            xmlns:plugin="clr-namespace:ElegantTabs.Abstraction;assembly=ElegantTabs.Abstraction"
+            BarBackgroundColor="White"
+            BarTextColor="White">
+    <TabbedPage.Children>
+        <view:FirstTab Title="Linear" Icon="search.png" plugin:Transforms.SelectedIcon="search_selected.png" plugin:Transforms.KeepIconColourIntact="True" plugin:Transforms.HideTitle="True"/>
+        <view:SecondTab Title="Circle" Icon="home.png" plugin:Transforms.SelectedIcon="home_selected.png" plugin:Transforms.HideTitle="True"/>
+        <view:ThirdTab Title="Yellow" Icon="ticket.png" plugin:Transforms.SelectedIcon="ticket_selected.png" plugin:Transforms.HideTitle="True"/>
+        <view:SettingsTab Title="Blue" Icon="settings.png" plugin:Transforms.SelectedIcon="settings_selected.png" plugin:Transforms.HideTitle="True"/>
+    </TabbedPage.Children>
+</TabbedPage>

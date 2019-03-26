@@ -23,16 +23,18 @@ namespace TestApp
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/MainPage");
+            await NavigationService.NavigateAsync("NavigationPage/StartPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
-            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
-            containerRegistry.RegisterForNavigation<CircularProgress, CircularProgressViewModel>();
-            containerRegistry.RegisterForNavigation<BluePage, BluePageViewModel>();
-            containerRegistry.RegisterForNavigation<NewTabbedPage, NewTabbedPageViewModel>();
+            containerRegistry.RegisterForNavigation<StartPage, StartPageViewModel>();    
+            containerRegistry.RegisterForNavigation<FirstTab, FirstTabViewModel>();
+            containerRegistry.RegisterForNavigation<SecondTab, SecondTabViewModel>();
+            containerRegistry.RegisterForNavigation<ThirdTab, ThirdTabViewModel>();
+            containerRegistry.RegisterForNavigation<SettingsTab, SettingsTabViewModel>();
+            containerRegistry.RegisterForNavigation<NewPage, NewPageViewModel>();
         }
     }
 }

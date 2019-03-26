@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TestApp.Views.FirstTab">
+    <ContentPage.Content>
+            <Button Text="GO TO SF LIST" VerticalOptions="CenterAndExpand" Command="{Binding GoToList}"
+               BackgroundColor="Red" TextColor="White"/>
+    </ContentPage.Content>
+</ContentPage>

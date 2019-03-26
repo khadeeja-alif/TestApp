@@ -28,6 +28,11 @@ namespace TestApp.Droid
 		{
 			global::Syncfusion.XForms.Android.Core.Resource.Drawable.inputlayout_togglecollapseicon = global::TestApp.Droid.Resource.Drawable.inputlayout_togglecollapseicon;
 			global::Syncfusion.XForms.Android.Core.Resource.Drawable.inputlayout_togglevisibleicon = global::TestApp.Droid.Resource.Drawable.inputlayout_togglevisibleicon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.inputlayout_togglecollapseicon = global::TestApp.Droid.Resource.Drawable.inputlayout_togglecollapseicon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.inputlayout_togglevisibleicon = global::TestApp.Droid.Resource.Drawable.inputlayout_togglevisibleicon;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.ApplicationName = global::TestApp.Droid.Resource.String.ApplicationName;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.Hello = global::TestApp.Droid.Resource.String.Hello;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.Load_More = global::TestApp.Droid.Resource.String.Load_More;
 			global::Syncfusion.XForms.Android.ProgressBar.Resource.Drawable.inputlayout_togglecollapseicon = global::TestApp.Droid.Resource.Drawable.inputlayout_togglecollapseicon;
 			global::Syncfusion.XForms.Android.ProgressBar.Resource.Drawable.inputlayout_togglevisibleicon = global::TestApp.Droid.Resource.Drawable.inputlayout_togglevisibleicon;
 			global::Syncfusion.XForms.Android.ProgressBar.Resource.Drawable.sfprogressbar_determinate_linear = global::TestApp.Droid.Resource.Drawable.sfprogressbar_determinate_linear;
@@ -3035,6 +3040,15 @@ namespace TestApp.Droid
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f0b002b
+			public const int ApplicationName = 2131427371;
+			
+			// aapt resource value: 0x7f0b002a
+			public const int Hello = 2131427370;
+			
+			// aapt resource value: 0x7f0b002c
+			public const int Load_More = 2131427372;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int abc_action_bar_home_description = 2131427328;
